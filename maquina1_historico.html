@@ -10,7 +10,7 @@
         <meta name="keywords" content="Monitoramento, Energia, Monitoramento de energia, Packbag, Packbag Casa Branca, Projeto Integrado UNIFEOB">
         <meta name="author" content="Equipe 7 da turma A de IoT - UNIFEOB">
         <link rel="icon" href="assets/logo_p.png" type="image/png">
-        <link rel="stylesheet" href="style-index.css">
+        <link rel="stylesheet" href="style-historico1.css">
     </head>
 
     <body>
@@ -21,7 +21,7 @@
                 <a href="index.html"><img src="assets/packbag_logo.png" alt="logo"></a>
             </div>
 
- 
+
 
             <nav>
                 <a href="ajuda.html">Ajuda</a>
@@ -33,31 +33,26 @@
 
         <main>
 
+            <p>Gasto de energia em Ampéres</p>
             <div class="main-container">
                 <!-- MÁQUINAS    -->
                 <div class="main-block">
-
-                    <div>
-                        <img src="assets/icone_maquina.png" alt="maquinas">
-                    </div> 
-                    <a href="maquinas.html">MÁQUINAS  </a>
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/1?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&max=01%2F06%2F2025&min=01%2F05%2F2025&results=10&title=Amperes&type=line"></iframe>
                 </div>
-
-                <!-- GRÁFICOS    -->
+            </div>
+            <p>Gasto de energia em Wats</p>
+            <div class="main-container">
                 <div class="main-block">
-                    <div>
-                        <img src="assets/icone_graficos.png" alt="graficos">
-                    </div>
-                    <a href="consumo.html">CONSUMO  </a>
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/2?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&results=10&title=Wats&type=line"></iframe>
                 </div>
             </div>
 
-            <footer>
-                <small> &copy; <a href="index.html">Volte a página inicial</a></small>
-                <!--<img src="assets/packbag_logo.png" alt="packbag_logo">-->
-            </footer>
-
         </main>
+
+        <footer>
+            <small> &copy; <a href="index.html">Volte a página inicial</a></small>
+                <!--<img src="assets/packbag_logo.png" alt="packbag_logo">-->
+        </footer>
     </body>
 
     

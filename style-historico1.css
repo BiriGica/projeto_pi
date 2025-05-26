@@ -50,6 +50,7 @@ nav {
     justify-content: center;
     z-index: 1000;
 }
+
 nav a {
     margin: 0 20px;
     position: relative;
@@ -86,7 +87,7 @@ main {
 
 /*main-block*/
 .main-block{
-    background-color:#ffffff;
+
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -112,6 +113,19 @@ main {
     color:#ffffff;
     background-color:#1b6e3e;
 }
+
+p {
+    color:#464646;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
 .maquinas img{
     max-width: 100%;
     border-radius: 5px;
@@ -151,6 +165,7 @@ footer {
 } 
 
 footer a{
+    padding-bottom: 5px;
     color:rgb(255, 94, 0);
     background-color:#fffdfd;
     justify-content: center;
