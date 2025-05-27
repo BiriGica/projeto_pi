@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <title>Monitoramento de Energia - Packbag </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Esta aplicação web tem o objetivo de monitorar o consumo de energia das máquinas da empresa Packbag.">
+        <meta name="keywords" content="Monitoramento, Energia, Monitoramento de energia, Packbag, Packbag Casa Branca, Projeto Integrado UNIFEOB">
+        <meta name="author" content="Equipe 7 da turma A de IoT - UNIFEOB">
+        <link rel="icon" href="assets/logo_p.png" type="image/png">
+        <link rel="stylesheet" href="style-historico1.css">
+    </head>
+
+    <body>
+        <header>
+            
+            <div id="logo">
+            <!--Logo-->
+                <a href="index.html"><img src="assets/packbag_logo.png" alt="logo"></a>
+            </div>
+
+
+
+            <nav>
+                <a href="ajuda.html">Ajuda</a>
+                <a href="histórico.html">Histórico</a>
+                <a href="documentacao.html">Documentação</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <h1>Consumo de Energia Packbag</h1>
+
+            <p>Gasto de energia mensal em Ampéres</p>
+            <div class="main-container">
+                <!-- MÁQUINAS    -->
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/1?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&max=01%2F06%2F2025&min=01%2F05%2F2025&results=10&title=Amperes&type=line"></iframe>
+                </div>
+            </div>
+            <p>Gasto de energia mensal em Wats</p>
+            <div class="main-container">
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/2?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&results=10&title=Wats&type=line"></iframe>
+                </div>
+            </div>
+
+            <p>Gasto de energia mensal em Ampéres</p>
+            <div class="main-container">
+                <!-- MÁQUINAS    -->
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/widgets/1083989"></iframe>
+                </div>
+            </div>
+            <p>Gasto de energia mensal em Wats</p>
+            <div class="main-container">
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/widgets/1083994"></iframe>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <small> &copy; <a href="index.html">Volte a página inicial</a></small>
+                <!--<img src="assets/packbag_logo.png" alt="packbag_logo">-->
+        </footer>
+    </body>
+
+    
