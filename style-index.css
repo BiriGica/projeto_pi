@@ -31,6 +31,7 @@ header img {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
+    position: fixed;
 }
 
 #logo {
@@ -58,6 +59,7 @@ nav a {
     font-weight: none;
     font-family: "Montserrat", serif;
     font-size: 20px;
+    background-color: #fffdfd;
 }
 
 nav a:hover {
@@ -67,6 +69,7 @@ nav a:hover {
 main {
     padding: 20px;
     text-align:justify;
+    
 }
 
 .main-container{
@@ -78,6 +81,7 @@ main {
     margin: 0 auto;              
     flex-wrap: wrap;
     text-align: left;
+    
 }
 
 .main-container p{
@@ -95,6 +99,7 @@ main {
   /*  box-shadow:0 4px 6px;*/
     align-items: center;
     padding: 10px 12px;
+    
  }
 
 .main-block a{
@@ -106,6 +111,7 @@ main {
     transition: all 0.2s;
     font-weight: none;
     text-decoration: none;
+    
 }
 
 .main-block a:hover{
@@ -141,18 +147,26 @@ body::before {
 }
 
 footer {
-    color:rgb(255, 94, 0);
-    background-color:#fffdfd;
-    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: #696969;
     font-size: 20px;
     text-decoration: none;
+    position: fixed;
     text-align: center;
-    padding-bottom: 80px
-} 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* em vez de só padding-bottom */
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    height: 80px; /* define altura fixa do footer */
+}
+
 
 footer a{
-    color:rgb(255, 94, 0);
-    background-color:#fffdfd;
+    color:rgb(255, 255, 255);
+    background-color:#696969;
     justify-content: center;
     font-size: 20px;
     text-decoration: none;
@@ -160,13 +174,7 @@ footer a{
 }
 
 footer :hover{
-    color:#1b6e3e;
-    background-color:#fffdfd;
+    color:rgb(255, 94, 0);
+    background-color:#696969;
 }
 
-footer img {
-    width: 1500px;
-    height: auto;
-    margin-bottom: 200px;
-     
-}

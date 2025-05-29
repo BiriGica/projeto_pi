@@ -31,6 +31,7 @@ header img {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
+    position: fixed;
 }
 
 #logo {
@@ -155,19 +156,26 @@ body::before {
 }
 
 footer {
-    color:rgb(255, 94, 0);
-    background-color:#fffdfd;
-    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: #696969;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
-    padding-bottom: 80px
-} 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* em vez de só padding-bottom */
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    height: 80px; /* define altura fixa do footer */
+}
+
 
 footer a{
-    padding-bottom: 5px;
-    color:rgb(255, 94, 0);
-    background-color:#fffdfd;
+    color:rgb(255, 255, 255);
+    background-color:#696969;
     justify-content: center;
     font-size: 20px;
     text-decoration: none;
@@ -175,13 +183,6 @@ footer a{
 }
 
 footer :hover{
-    color:#1b6e3e;
-    background-color:#fffdfd;
-}
-
-footer img {
-    width: 1500px;
-    height: auto;
-    margin-bottom: 200px;
-     
+    color:rgb(255, 94, 0);
+    background-color:#696969;
 }

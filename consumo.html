@@ -25,18 +25,35 @@
 
             <nav>
                 <a href="ajuda.html">Ajuda</a>
-                <a href="histórico.html">Histórico</a>
                 <a href="documentacao.html">Documentação</a>
             </nav>
 
         </header>
 
         <main>
-            <h1>Consumo de Energia Packbag</h1>
+
+            <div id="title">
+                <p>Consumo de Energia Packbag</p>
+            </div>
 
             <p>Gasto de energia mensal em Ampéres</p>
             <div class="main-container">
-                <!-- MÁQUINAS    -->
+                <!-- GRÁFICOS SEMANAIS    -->
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/5?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&results=7&title=Amperes&type=line"></iframe>
+                </div>
+            </div>
+            <p>Gasto de energia mensal em Wats</p>
+            <div class="main-container">
+                <div class="main-block">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/6?bgcolor=ffffffffff&color=FF872B&dynamic=true&results=7&title=Wats&type=line"></iframe>
+                </div>
+            </div>
+
+
+            <p>Gasto de energia mensal em Ampéres</p>
+            <div class="main-container">
+                <!-- GRÁFICOS MENSAIS    -->
                 <div class="main-block">
                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/1?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&max=01%2F06%2F2025&min=01%2F05%2F2025&results=10&title=Amperes&type=line"></iframe>
                 </div>
@@ -45,20 +62,6 @@
             <div class="main-container">
                 <div class="main-block">
                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/charts/2?bgcolor=%23ffffff&color=%23FF872B&dynamic=true&results=10&title=Wats&type=line"></iframe>
-                </div>
-            </div>
-
-            <p>Gasto de energia mensal em Ampéres</p>
-            <div class="main-container">
-                <!-- MÁQUINAS    -->
-                <div class="main-block">
-                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/widgets/1083989"></iframe>
-                </div>
-            </div>
-            <p>Gasto de energia mensal em Wats</p>
-            <div class="main-container">
-                <div class="main-block">
-                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2969222/widgets/1083994"></iframe>
                 </div>
             </div>
 
